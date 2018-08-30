@@ -3,14 +3,14 @@
 int main()
 {
 	int c = 0;
-	int r = 32; //tamanho
+	int r = 32;
 	int r2 = r;
 	while (r != 0)
 	{
 		c++;
 		if (c > r2 - 1)
 		{
-			c = 0;   // same as c = !r
+			c = !r; // same as c = 0;
 			r--;
 			printf("\n");
 		}
